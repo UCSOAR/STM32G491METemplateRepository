@@ -40,7 +40,6 @@ Core/Src/stm32g4xx_it.o: ../Core/Src/stm32g4xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h \
  ../Core/Inc/../../Components/SysCore/Inc/RunInterface.hpp \
- ../Core/Inc/../../Components/SysCore/Inc/UARTDriver.hpp \
  ../Core/Inc/stm32g4xx_it.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
@@ -84,5 +83,4 @@ Core/Src/stm32g4xx_it.o: ../Core/Src/stm32g4xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:
 ../Core/Inc/../../Components/SysCore/Inc/RunInterface.hpp:
-../Core/Inc/../../Components/SysCore/Inc/UARTDriver.hpp:
 ../Core/Inc/stm32g4xx_it.h:

@@ -88,8 +88,8 @@ all: main-build
 main-build: STM32G491METemplateRepository.elf secondary-outputs
 
 # Tool invocations
-STM32G491METemplateRepository.elf STM32G491METemplateRepository.map: $(OBJS) $(USER_OBJS) C:\Users\spiro\STM32CubeIDE\workspace_1.16.1\STM32G491METempleteRepository\STM32G491METX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32G491METemplateRepository.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\spiro\STM32CubeIDE\workspace_1.16.1\STM32G491METempleteRepository\STM32G491METX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32G491METemplateRepository.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+STM32G491METemplateRepository.elf STM32G491METemplateRepository.map: $(OBJS) $(USER_OBJS) C:\cygwin64\home\spiro\SOAR\STM32G491METempleteRepository\STM32G491METX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "STM32G491METemplateRepository.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\cygwin64\home\spiro\SOAR\STM32G491METempleteRepository\STM32G491METX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32G491METemplateRepository.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

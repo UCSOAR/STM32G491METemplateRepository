@@ -8,7 +8,7 @@
 #ifndef C__IFACE_HPP_
 #define C__IFACE_HPP_
 
-#include "UARTDriver.hpp"
+//#include "UARTDriver.hpp"
 
 /**
  * @brief Interface to run the C++ codebase in the C compiler
