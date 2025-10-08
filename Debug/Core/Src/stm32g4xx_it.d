@@ -24,6 +24,9 @@ Core/Src/stm32g4xx_it.o: ../Core/Src/stm32g4xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h \
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h \
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h \
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h \
@@ -39,8 +42,8 @@ Core/Src/stm32g4xx_it.o: ../Core/Src/stm32g4xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h \
- ../Core/Inc/../../Components/SysCore/Inc/RunInterface.hpp \
- ../Core/Inc/stm32g4xx_it.h
+ ../Core/Inc/stm32g4xx_it.h \
+ C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/SysCore/Inc/RunInterface.hpp
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -67,6 +70,9 @@ Core/Src/stm32g4xx_it.o: ../Core/Src/stm32g4xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd.h:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usb.h:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pcd_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h:
@@ -82,5 +88,5 @@ Core/Src/stm32g4xx_it.o: ../Core/Src/stm32g4xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:
-../Core/Inc/../../Components/SysCore/Inc/RunInterface.hpp:
 ../Core/Inc/stm32g4xx_it.h:
+C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/SysCore/Inc/RunInterface.hpp:

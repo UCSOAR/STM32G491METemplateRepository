@@ -19,7 +19,7 @@
 #endif
 
 /* System Wide Includes ------------------------------------------------------------------*/
-#include "main_system.hpp" // C++ Main File Header
+#include "main_avionics.hpp" // C++ Main File Header
 #include "UARTDriver.hpp"
 
 /* Cube++ Required Configuration ------------------------------------------------------------------*/

@@ -13,11 +13,23 @@
 /**
  * @brief Interface to run the C++ codebase in the C compiler
  */
+#ifdef __cplusplus
+extern "C" {
+#endif
 void run_interface();
+#ifdef __cplusplus
+}
+#endif
 
 /**
  * @brief Interrupt Routing for the UART driver
  */
+#ifdef __cplusplus
+extern "C" {
+#endif
 void cpp_USART2_IRQHandler();
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* C__IFACE_HPP_ */

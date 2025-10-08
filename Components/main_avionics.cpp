@@ -13,7 +13,7 @@
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver {
-UARTDriver uart8(UART8);
+UARTDriver usart2(USART2);
 }
 
 /* Interface Functions

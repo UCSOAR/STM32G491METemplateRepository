@@ -12,10 +12,11 @@
  * ----------------------------------------------------------------------------*/
 #include "Mutex.hpp"
 // Board specific includes
-#include "stm32h7xx_hal.h"
-#include "stm32h7xx_hal_rcc.h"
-#include "stm32h7xx_ll_dma.h"
-#include "stm32h7xx_ll_usart.h"
+#include "stm32g4xx_hal.h"
+#include "stm32g4xx_hal_rcc.h"
+#include "stm32g4xx_ll_dma.h"
+#include "stm32g4xx_ll_usart.h"
+
 
 /* Interface Functions
  * ------------------------------------------------------------------*/
@@ -37,10 +38,10 @@ void run_StartDefaultTask();
 // UART Driver
 class UARTDriver;
 namespace Driver {
-extern UARTDriver uart8;
+extern UARTDriver usart2;
 }
 namespace UART {
-constexpr UARTDriver* Debug = &Driver::uart8;
+constexpr UARTDriver* Debug = &Driver::usart2;
 }
 
 /* System Handles

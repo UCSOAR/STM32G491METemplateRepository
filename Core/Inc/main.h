@@ -41,9 +41,6 @@ extern "C" {
 
 #include "stm32g4xx_ll_exti.h"
 
-
-#include "../../Components/SysCore/Inc/RunInterface.hpp"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 

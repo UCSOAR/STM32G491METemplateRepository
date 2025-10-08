@@ -9,13 +9,26 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include USB_Device/Target/subdir.mk
+-include USB_Device/App/subdir.mk
+-include SoarOS/Drivers/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/subdir.mk
+-include Middlewares/Third_Party/FatFs/src/option/subdir.mk
+-include Middlewares/Third_Party/FatFs/src/subdir.mk
+-include Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk
+-include Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/subdir.mk
+-include FATFS/Target/subdir.mk
+-include FATFS/App/subdir.mk
 -include Drivers/STM32G4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include Components/SysCore/subdir.mk
+-include Components/SoarDebug/subdir.mk
+-include Components/FileSystem/subdir.mk
+-include Components/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -88,8 +101,8 @@ all: main-build
 main-build: STM32G491METemplateRepository.elf secondary-outputs
 
 # Tool invocations
-STM32G491METemplateRepository.elf STM32G491METemplateRepository.map: $(OBJS) $(USER_OBJS) C:\cygwin64\home\spiro\SOAR\STM32G491METempleteRepository\STM32G491METX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32G491METemplateRepository.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\cygwin64\home\spiro\SOAR\STM32G491METempleteRepository\STM32G491METX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32G491METemplateRepository.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+STM32G491METemplateRepository.elf STM32G491METemplateRepository.map: $(OBJS) $(USER_OBJS) C:\cygwin64\home\spiro\SOAR\STM32G491METemplateRepository\STM32G491METX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "STM32G491METemplateRepository.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\cygwin64\home\spiro\SOAR\STM32G491METemplateRepository\STM32G491METX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32G491METemplateRepository.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
