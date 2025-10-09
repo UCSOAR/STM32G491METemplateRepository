@@ -47,8 +47,6 @@ Core/Startup \
 Drivers/STM32G4xx_HAL_Driver/Src \
 FATFS/App \
 FATFS/Target \
-Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src \
-Middlewares/ST/STM32_USB_Device_Library/Core/Src \
 Middlewares/Third_Party/FatFs/src \
 Middlewares/Third_Party/FatFs/src/option \
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS \
@@ -56,6 +54,4 @@ Middlewares/Third_Party/FreeRTOS/Source \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang \
 SoarOS/Drivers \
-USB_Device/App \
-USB_Device/Target \
 

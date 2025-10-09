@@ -12,7 +12,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "SoarFileSystem.hpp"
 #include <string.h>
-//#include <cstdio>
+#include <cstdio>
 /* Example usage functions ---------------------------------------------------*/
 
 /**
