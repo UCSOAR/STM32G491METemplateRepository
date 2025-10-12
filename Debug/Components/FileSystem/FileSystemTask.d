@@ -1,5 +1,6 @@
-Components/SoarDebug/DebugTask.o: ../Components/SoarDebug/DebugTask.cpp \
- C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/SoarDebug/Inc/DebugTask.hpp \
+Components/FileSystem/FileSystemTask.o: \
+ ../Components/FileSystem/FileSystemTask.cpp \
+ C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/FileSystemTask.hpp \
  C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/Task.hpp \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
@@ -59,10 +60,10 @@ Components/SoarDebug/DebugTask.o: ../Components/SoarDebug/DebugTask.cpp \
  C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/CubeDefines.hpp \
  C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
  C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp \
- C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/Command.hpp \
- C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/FileSystemTask.hpp \
+ C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/SoarFileSystem.hpp \
+ C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/SoarFileSystemExample.hpp \
  C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/SoarFileSystem.hpp
-C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/SoarDebug/Inc/DebugTask.hpp:
+C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/FileSystemTask.hpp:
 C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/Task.hpp:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
@@ -122,6 +123,6 @@ C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Drivers/Inc/UAR
 C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/CubeDefines.hpp:
 C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
 C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/CubeUtils.hpp:
-C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/SoarOS/Core/Inc/Command.hpp:
-C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/FileSystemTask.hpp:
+C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/SoarFileSystem.hpp:
+C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/SoarFileSystemExample.hpp:
 C:/cygwin64/home/spiro/SOAR/STM32G491METemplateRepository/Components/FileSystem/Inc/SoarFileSystem.hpp:

@@ -1,3 +1,4 @@
+"./Components/FileSystem/FileSystemTask.o"
 "./Components/FileSystem/SoarFileSystem.o"
 "./Components/FileSystem/SoarFileSystemExample.o"
 "./Components/SoarDebug/DebugTask.o"

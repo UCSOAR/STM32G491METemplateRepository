@@ -137,7 +137,7 @@ void SoarFS_Example_LogSensorData(float temperature, float humidity, uint32_t ti
     {
         // Format data as CSV
         char dataLine[128];
-        snprintf(dataLine, sizeof(dataLine), "%lu,%.2f,%.2f\\n", timestamp, temperature, humidity);
+        //snprintf(dataLine, sizeof(dataLine), "%lu,%.2f,%.2f\\n", timestamp, temperature, humidity);
 
         // Write data
         SoarFS_WriteFile(logFile, (const uint8_t *)dataLine, strlen(dataLine));

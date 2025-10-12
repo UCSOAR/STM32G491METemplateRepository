@@ -5,14 +5,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../Components/FileSystem/FileSystemTask.cpp \
 ../Components/FileSystem/SoarFileSystem.cpp \
 ../Components/FileSystem/SoarFileSystemExample.cpp 
 
 OBJS += \
+./Components/FileSystem/FileSystemTask.o \
 ./Components/FileSystem/SoarFileSystem.o \
 ./Components/FileSystem/SoarFileSystemExample.o 
 
 CPP_DEPS += \
+./Components/FileSystem/FileSystemTask.d \
 ./Components/FileSystem/SoarFileSystem.d \
 ./Components/FileSystem/SoarFileSystemExample.d 
 
@@ -24,7 +27,7 @@ Components/FileSystem/%.o Components/FileSystem/%.su Components/FileSystem/%.cyc
 clean: clean-Components-2f-FileSystem
 
 clean-Components-2f-FileSystem:
-	-$(RM) ./Components/FileSystem/SoarFileSystem.cyclo ./Components/FileSystem/SoarFileSystem.d ./Components/FileSystem/SoarFileSystem.o ./Components/FileSystem/SoarFileSystem.su ./Components/FileSystem/SoarFileSystemExample.cyclo ./Components/FileSystem/SoarFileSystemExample.d ./Components/FileSystem/SoarFileSystemExample.o ./Components/FileSystem/SoarFileSystemExample.su
+	-$(RM) ./Components/FileSystem/FileSystemTask.cyclo ./Components/FileSystem/FileSystemTask.d ./Components/FileSystem/FileSystemTask.o ./Components/FileSystem/FileSystemTask.su ./Components/FileSystem/SoarFileSystem.cyclo ./Components/FileSystem/SoarFileSystem.d ./Components/FileSystem/SoarFileSystem.o ./Components/FileSystem/SoarFileSystem.su ./Components/FileSystem/SoarFileSystemExample.cyclo ./Components/FileSystem/SoarFileSystemExample.d ./Components/FileSystem/SoarFileSystemExample.o ./Components/FileSystem/SoarFileSystemExample.su
 
 .PHONY: clean-Components-2f-FileSystem
 

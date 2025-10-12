@@ -10,10 +10,12 @@
 #include "SystemDefines.hpp"
 #include "UARTDriver.hpp"
 #include "CubeTask.hpp"
+#include "FileSystemTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
-namespace Driver {
-UARTDriver usart2(USART2);
+namespace Driver
+{
+  UARTDriver usart2(USART2);
 }
 
 /* Interface Functions
@@ -22,17 +24,19 @@ UARTDriver usart2(USART2);
  * @brief Main function interface, called inside main.cpp before os
  * initialization takes place.
  */
-void run_main() {
+void run_main()
+{
   // Init Tasks
   CubeTask::Inst().InitTask();
   DebugTask::Inst().InitTask();
+  FileSystemTask::Inst().InitTask();
 
   // Print System Boot Info : Warning, don't queue more than 10 prints before
   // scheduler starts
   SOAR_PRINT("\n-- CUBE SYSTEM --\n");
   SOAR_PRINT(
-      "System Reset Reason: [TODO]\n");  // TODO: System reset reason can be
-                                         // implemented via. Flash storage
+      "System Reset Reason: [TODO]\n"); // TODO: System reset reason can be
+                                        // implemented via. Flash storage
   SOAR_PRINT("Current System Free Heap: %d Bytes\n", xPortGetFreeHeapSize());
   SOAR_PRINT("Lowest Ever Free Heap: %d Bytes\n\n",
              xPortGetMinimumEverFreeHeapSize());
@@ -46,7 +50,8 @@ void run_main() {
   // Should never reach here
   SOAR_ASSERT(false, "osKernelStart() failed");
 
-  while (1) {
+  while (1)
+  {
     osDelay(100);
     HAL_NVIC_SystemReset();
   }
