@@ -1,0 +1,8 @@
+[submodule "PeripheralDriversSubmodule"]
+	name = SoarDrivers
+	path = PeripheralDriversSubmodule
+	url = https://github.com/UCSOAR/PeripheralDriversSubmodule.git
+[submodule "SoarOperatingSystem"]
+	name = SoarOS
+	path = SoarOperatingSystem
+	url = https://github.com/UCSOAR/SoarOperatingSystem.git
