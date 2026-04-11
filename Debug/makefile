@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (13.3.rel1)
+# Toolchain: GNU Tools for STM32 (14.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -38,34 +38,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := LRB_Template_NewProject
-BUILD_ARTIFACT_EXTENSION := elf
+BUILD_ARTIFACT_NAME := STM32G491ME
+BUILD_ARTIFACT_EXTENSION :=
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-LRB_Template_NewProject.elf \
+STM32G491ME \
 
 MAP_FILES += \
-LRB_Template_NewProject.map \
+STM32G491ME.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-LRB_Template_NewProject.list \
+STM32G491ME.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: LRB_Template_NewProject.elf secondary-outputs
+main-build: STM32G491ME secondary-outputs
 
 # Tool invocations
-LRB_Template_NewProject.elf LRB_Template_NewProject.map: $(OBJS) $(USER_OBJS) C:\Users\shiva\Documents\SOAR\Software\Aegis\STM32G491METemplateRepository\STM32G491MESX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LRB_Template_NewProject.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\shiva\Documents\SOAR\Software\Aegis\STM32G491METemplateRepository\STM32G491MESX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LRB_Template_NewProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STM32G491ME STM32G491ME.map: $(OBJS) $(USER_OBJS) C:\Users\eljav\Documents\SOAR\STM32G491METemplateRepository\STM32G491MESX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STM32G491ME" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\eljav\Documents\SOAR\STM32G491METemplateRepository\STM32G491MESX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32G491ME.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -74,14 +74,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-LRB_Template_NewProject.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "LRB_Template_NewProject.list"
+STM32G491ME.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "STM32G491ME.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) LRB_Template_NewProject.elf LRB_Template_NewProject.list LRB_Template_NewProject.map default.size.stdout
+	-$(RM) STM32G491ME STM32G491ME.list STM32G491ME.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
