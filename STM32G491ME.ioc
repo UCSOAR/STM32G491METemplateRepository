@@ -1,4 +1,4 @@
-﻿#MicroXplorer Configuration settings - do not modify
+#MicroXplorer Configuration settings - do not modify
 ADC1.Channel-0\#ChannelRegularConversion=ADC_CHANNEL_1
 ADC1.CommonPathInternal=null|null|null|null
 ADC1.IPParameters=Rank-0\#ChannelRegularConversion,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,NbrOfConversionFlag,master,SingleDiff-0\#ChannelRegularConversion,CommonPathInternal
@@ -355,4 +355,3 @@ VP_SYS_VS_tim2.Mode=TIM2
 VP_SYS_VS_tim2.Signal=SYS_VS_tim2
 board=custom
 rtos.0.ip=FREERTOS
-
