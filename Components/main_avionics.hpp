@@ -42,6 +42,7 @@ extern UARTDriver usart2;
 }
 namespace UART {
 constexpr UARTDriver* Debug = &Driver::usart2;
+
 }
 
 /* System Handles

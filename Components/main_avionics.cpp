@@ -10,11 +10,11 @@
 #include "SystemDefines.hpp"
 #include "UARTDriver.hpp"
 #include "CubeTask.hpp"
-#include "FileSystemTask.hpp"
 
 /* Drivers ------------------------------------------------------------------*/
 namespace Driver
 {
+  UARTDriver usart3(USART3);
   UARTDriver usart2(USART2);
 }
 
@@ -29,7 +29,6 @@ void run_main()
   // Init Tasks
   CubeTask::Inst().InitTask();
   DebugTask::Inst().InitTask();
-  FileSystemTask::Inst().InitTask();
 
   // Print System Boot Info : Warning, don't queue more than 10 prints before
   // scheduler starts
